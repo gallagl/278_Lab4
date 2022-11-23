@@ -23,7 +23,7 @@ See LICENCE.MD for restrictions on the use of this code.
 #include <time.h>
 #include "bintree.h"
 #include "LAB4_AVL.h"
-#include "bst.h"
+#include "LAB4_BST.h"
 
 void panic(char *msg, char *fname)
 // Function to display error message on stderr and exit program.
@@ -100,10 +100,19 @@ int main(int argc, char *argv[])
 			// This is the terse output when a large file is being read
 			printf ("%7d: %11d\n", count, i);
 			}
+        insertAVL(i, NULL, t_avl);
+        if (gabby)	{
+            printf("Inorder: ");
+            inOrderT(t_avl->root);
+            printf("\n-------\n");
+        } else	{
+            // This is the terse output when a large file is being read
+            printf ("%7d: %11d\n", count, i);
+        }
 
 		// Your code to populate BST goes here
 		//---<SNIP>---
-
+        insertAVL(i, NULL, t_bst);
 		//---</SNIP>---
 	
 		// keep track of last keys inserted
