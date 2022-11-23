@@ -24,7 +24,7 @@ See LICENCE.MD for restrictions on the use of this code.
 
 #include <stdio.h>
 #include "bintree.h"
-#include "avl.h"
+#include "LAB4_AVL.h"
 
 
 void panic(char *msg, char *fname)
@@ -96,5 +96,10 @@ int main(int argc, char *argv[])
 	fclose (finn);
 
 	// Any additional processing?
+
+    delete(t_avl->root,10);
+    printf("Deleted 10 - Inorder: ");
+    inOrderT(t_avl->root);
+    printf("\n-------\n");
 	return 0;
 }//main()

@@ -22,7 +22,7 @@ See LICENCE.MD for restrictions on the use of this code.
 #include <stdio.h>
 #include <time.h>
 #include "bintree.h"
-#include "avl.h"
+#include "LAB4_AVL.h"
 #include "bst.h"
 
 void panic(char *msg, char *fname)

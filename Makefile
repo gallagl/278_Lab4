@@ -16,6 +16,6 @@ avl.exe:	main.obj avl.obj
 
 makerandom.exe:	makerandom.c
 
-main.obj:	main.c avl.h
+main.obj:	main.c LAB4_AVL.h
 
-avl.obj:	avl.c. avl.h
+avl.obj:	avl.c. LAB4_AVL.h
